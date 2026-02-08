@@ -122,7 +122,7 @@ function Contact() {
                         <input type="text" placeholder='Subject' value={subject} onChange={(e) => setSubject(e.target.value)} className='w-[310px] sm:w-full md:w-full h-[30px] border-2 border-gray-300 mt-4 p-2' />
                         <textarea placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)} className='w-[310px] sm:w-full md:w-full mt-4 border-2 border-gray-300 p-2'></textarea>
 
-                        <button className='flex justify-center px-4 py-2 border-2 border-green-500 shadow-md rounded-md active:bg-gray-200 duration-200 mt-2'
+                        <button className='btn-primary mt-2 w-full'
                         onClick={handleDefault}
                         >
                             Submit
@@ -171,18 +171,18 @@ function Contact() {
             </div>
 
             {/* NEWSLETTER BANNER */}
-            <div className='h-[150px] bg-banner6 bg-cover bg-center'>
-                <div className='w-full m-auto p-2 md:p-4 grid grid-cols-1 md:grid-cols-2 gap-4'>
-                    <div className='flex flex-col justify-center items-start'>
-                        <h1 className='text-[14px] md:text-3xl text-black font-bold p-2'>Sign Up For Newsletters</h1>
-                        <p className='text-[12px] md:text-sm text-white font-semibold p-2'>Get Email updates About our Latest Shop and <span className='text-yellow-400'>Special offers</span></p>
-                    </div>
-                    <div className='flex flex-row justify-center items-center'>
-                        <input type="text" className='w-[400px] h-[33px] px-2 border-2 border-black outline-none shadow-sm' placeholder='Your E-mail Address' />
-                        <button className='w-[100px] h-[32px] bg-transparent border-2 border-black shadow-sm'>Subscribe</button>
-                    </div>
-                </div>
-            </div>
+      <div className='h-[150px] bg-gray-800'>
+        <div className='w-full m-auto p-2 md:p-4 grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <div className='flex flex-col justify-center items-start'>
+            <h1 className='text-[14px] md:text-3xl font-bold p-2 text-white'>Sign Up For Newsletters</h1>
+            <p className='text-[12px] md:text-sm font-semibold p-2 text-white'>Get Email updates About our Latest Shop and <span className='text-yellow-400'>Special offers</span></p>
+          </div>
+          <div className='flex flex-row justify-center items-center'>
+            <input type="text" className='w-[400px] h-[35px] px-2 border-2 border-black outline-none shadow-sm' placeholder='Your E-mail Address' />
+            <button className='w-[100px] h-[32px] bg-transparent border-2 text-white border-white shadow-sm rounded-tr-md rounded-br-md'>Subscribe</button>
+          </div>
+        </div>
+      </div>
         </>
     )
 }

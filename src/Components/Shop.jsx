@@ -69,8 +69,8 @@ const Shop = () => {
   return (
     <>
       <div className='w-full h-[150px] bg-shopbanner6 bg-cover p-4 flex flex-col justify-center items-center gap-1'>
-        <h1 className='text-center text-3xl text-black font-bold'>#stayhome</h1>
-        <p className='text-center text-[14px] font-bold'>
+        <h1 className='text-center text-3xl text-black font-bold font-heading'>#stayhome</h1>
+        <p className='text-center text-[14px] font-bold font-body'>
           Save more With Coupen & up to 70% off !
         </p>
       </div>
@@ -109,14 +109,14 @@ const Shop = () => {
               />
             </NavLink>
 
-            <p className="text-gray-400 text-[12px] mt-2">Addidas</p>
+            <p className="text-gray-400 text-[12px] mt-2 font-body">Zayra</p>
 
-            <p className="text-[16px] font-semibold">{item.name}</p>
+            <p className="text-[16px] font-semibold font-heading">{item.name}</p>
 
             <div className="flex">⭐ ⭐ ⭐ ⭐</div>
 
             <div className="w-full flex justify-between mt-2 items-center">
-              <p>₹{item.price}</p>
+              <p className="font-body">₹{item.price}</p>
               <button onClick={() => addToCart(item)}>
                 <img
                   src="cart-large-minimalistic-svgrepo-com.svg"

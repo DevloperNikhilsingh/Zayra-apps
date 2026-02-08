@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center
+    px-4 py-2
+    rounded-xl
+    font-medium
+    text-white
+    bg-primary
+    transition-all duration-300 ease-out
+    shadow-lg shadow-purple-500/30
+    hover:shadow-xl hover:shadow-purple-500/40
+    hover:-translate-y-0.5
+    active:translate-y-0
+    active:shadow-md;
+  }
+}
 
 
 @keyframes move {
@@ -16,4 +31,8 @@
 
 .animate-move {
   animation: move 12s linear infinite;
+}
+
+:root {
+  --primary: #6C5CE7; /* purple / blue */
 }

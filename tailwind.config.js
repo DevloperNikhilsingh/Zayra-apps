@@ -23,16 +23,19 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "var(--primary)",
+      },
 
       /* ✅ BACKGROUND IMAGES (tumhara existing) */
       backgroundImage: {
-        'sale-banner': "url('/SaleBanner.jpg')",
+        'sale-banner': "url('/Nikhil.jpg')",
         'banner': "url('/buy_get_free.jpg')",
         'banner2': "url('/upcoming_season.jpg')",
         'banner3': "url('/Tshirt_banner.jpg')",
         'banner4': "url('/Seasonal.jpg')",
         'banner5': "url('/otabek-xatipov-Bg6apLsAE3Q-unsplash.jpg')",
-        'banner6': "url('/newsletter.jpg')",
+        'banner6': "url('/Nikhil12.jpg')",
         'shopbanner6': "url('/ShopBanner.jpg')",
         'blogbanner': "url('/blogbanner.jpg')",
         'aboutbanner': "url('/aboutbanner.jpg')",
@@ -53,6 +56,10 @@ export default {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" },
         },
+      },
+      fontFamily: {
+        heading: ["Poppins"],
+        body: ["Inter"],
       },
 
     },
